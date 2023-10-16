@@ -1,12 +1,13 @@
-import React from 'react'
-import Title from './components/Title'
+import Calculator from './components/Calculator.jsx';
 import './App.css'
+import Title from './components/Title.jsx';
 
-function App() {
+function App(props) {
   return (
-    <div>
-      <Title />
-    </div>
+    <>
+      <Title text="Calculator 9000" />   
+      <Calculator />
+    </>
   )
 }
 

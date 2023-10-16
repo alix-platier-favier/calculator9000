@@ -1,10 +1,7 @@
-import React from 'react';
+import React from 'react'
 
-function Title() {
-    return (
-
-        <h1>Calculator 9000</h1>
-    );
+function Title(props) {
+  return <h1>{props.text}</h1>
 }
 
 export default Title;
