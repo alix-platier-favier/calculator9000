@@ -35,10 +35,10 @@ h1 {
   margin-top: 20px;
 }
 
-.buttons .w2 {
-  grid-template-columns: repeat(2, 1fr);
-  grid-column: span 2;
+button.equal-button {
+  grid-column: span 1;
   width: 100%;
+  margin-top: 10px;
 }
 
 button {
@@ -63,4 +63,8 @@ button.operator-button {
 
 button.equal-button {
   background-color: aqua;
+}
+
+.result {
+  
 }
