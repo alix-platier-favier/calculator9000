@@ -29,21 +29,42 @@ function Calculator() {
     return (
         <div className="calculator">
             <BeautifulScreen currentOperation={currentOperation} result={result} />
-            <div className="buttons w3">
-                {['1','2','3','4','5','6','7','8','9'].map(num => (
-                    <NumberButton key={num} value={num} onClick={handleNumberClick} />
-                ))}
-            </div>
-            <div className="buttons w1">
-                <NumberButton key={'0'} value={'0'} onClick={handleNumberClick} />
-            </div>
-            <div className="operators">
-                {['+','-','*','/'].map(op => (
+            <div className="buttons w4">
+            {['/'].map(op => (
                     <OperatorButton key={op} value={op} onClick={handleOperatorClick} />
                 ))}
             </div>
-            <div className="equal">
-                <EqualButton onClick={handleEqualClick} />
+            <div className="buttons w4">
+                {['1','2','3'].map(num => (
+                    <NumberButton key={num} value={num} onClick={handleNumberClick} />
+                ))}
+                {['+'].map(op => (
+                    <OperatorButton key={op} value={op} onClick={handleOperatorClick} />
+                ))}
+            </div>
+            <div className="buttons w4">
+                {['4','5','6'].map(num => (
+                    <NumberButton key={num} value={num} onClick={handleNumberClick} />
+                ))}
+                {['-'].map(op => (
+                    <OperatorButton key={op} value={op} onClick={handleOperatorClick} />
+                ))}
+            </div>
+            <div className="buttons w4">
+                {['7','8','9'].map(num => (
+                    <NumberButton key={num} value={num} onClick={handleNumberClick} />
+                ))}
+                {['*'].map(op => (
+                    <OperatorButton key={op} value={op} onClick={handleOperatorClick} />
+                ))}
+            </div>
+            <div className="buttons">
+                <div className="w2">
+                    <NumberButton key={'0'} value={'0'} onClick={handleNumberClick} />
+                </div>
+                <div className="w2">
+                    <EqualButton onClick={handleEqualClick} />
+                </div>
             </div>
         </div>
     );

@@ -6,39 +6,61 @@ h1 {
 }
 
 .calculator {
-  width: 400px;
+  width: 320px;
   max-width: 100%;
   padding: 20px;
-  background-color: #fff;
+  background-color: #f0f0f0; 
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-.buttons w3{
+.BeautifulScreen {
+  padding: 10px;
+  background-color: #fff; 
+  border: 1px solid #ccc; 
+  border-radius: 4px;
+  text-align: right; 
+  height: 50px; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.buttons {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 10px;
   margin-top: 20px;
 }
 
-.buttons w1{
-  display: grid;
-  grid-template-columns: repeat(1fr);
-  gap: 10px;
-  margin-top: 20px;
+.buttons .w2 {
+  grid-template-columns: repeat(2, 1fr);
+  grid-column: span 2;
+  width: 100%;
 }
 
 button {
-  padding: 10px 20px;
+  padding: 15px 20px; 
   font-size: 1.2rem;
   background-color: #646cff;
-  border: none;
+  border: 1px solid #333; 
   color: #fff;
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.2s ease;
+  text-align: center;
 }
 
 button:hover {
   background-color: #5252d4;
+}
+
+button.operator-button {
+  background-color: aqua;
+}
+
+button.equal-button {
+  background-color: aqua;
 }
